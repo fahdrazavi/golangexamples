@@ -7,8 +7,7 @@ import (
 func ConcatSlice(sliceToConcat []byte) string {
 	str := string(sliceToConcat[0])
 	for _, c := range sliceToConcat[1:] {
-		str += "-"
-		str += string(c)
+		str += "-" + string(c)
 	}
 	return str
 }
